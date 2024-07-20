@@ -5,7 +5,7 @@ API que consulta vários CEPs simultaneamente usando viaCEP.
 
 ## Stack utilizada
 
-PHP, Laravel, PHPUnit, Swagger
+PHP, Laravel, PHPUnit, Swagger, Docker
 
 
 
