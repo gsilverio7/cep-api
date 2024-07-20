@@ -67,5 +67,5 @@ A documentação também está disponível de forma interativa na página inicia
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/gsilverio7/cep-api/master/public/api_doc_screenshot.png)
 
