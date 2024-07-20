@@ -11,7 +11,7 @@ PHP, Laravel, PHPUnit, Swagger
 
 ## Rodando o projeto localmente
 
-Requisitos: PHP 8.2 
+Requisitos: PHP 8.2 com extensão pdo_sqlite habilitada
 
 Clone o projeto
 
@@ -29,6 +29,15 @@ Inicie o servidor
 
 ```bash
   php artisan serve
+```
+
+
+## Rodando o projeto usando Docker
+
+Requisitos: Docker 
+
+```bash
+  docker-compose up
 ```
 
 
