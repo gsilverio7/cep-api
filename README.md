@@ -62,7 +62,7 @@ Para rodar os testes, rode o seguinte comando
 | :---------- | :--------- | :---------------------------------- |
 | `ceps` | `string` | **Obrigatório**. CEPs separados por vírgula |
 
-A documentação também está disponível de forma interativa na página inicial do projeto. 
+A documentação também está disponível de forma interativa na página inicial do projeto (localhost:8000). 
 
 
 ## Screenshots
