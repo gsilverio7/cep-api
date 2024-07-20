@@ -1,0 +1,122 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "CEP API",
+        "description": "API que consulta vários CEPs simultaneamente usando viaCEP. Documentação feita com OpenAPI/Swagger.",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/search/local/{ceps}": {
+            "get": {
+                "tags": [
+                    "default"
+                ],
+                "summary": "Buscar CEPs",
+                "operationId": "54762b51372edb1e6b6025c97cb2911d",
+                "parameters": [
+                    {
+                        "name": "ceps",
+                        "in": "path",
+                        "description": "CEPs separados por vírgula",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "cep": {
+                                                "type": "string",
+                                                "example": "17560246"
+                                            },
+                                            "label": {
+                                                "type": "string",
+                                                "example": "Avenida Paulista, Vera Cruz"
+                                            },
+                                            "logradouro": {
+                                                "type": "string",
+                                                "example": "Avenida Paulista"
+                                            },
+                                            "complemento": {
+                                                "type": "string",
+                                                "example": "de 1600/1601 a 1698/1699"
+                                            },
+                                            "bairro": {
+                                                "type": "string",
+                                                "example": "CECAP"
+                                            },
+                                            "localidade": {
+                                                "type": "string",
+                                                "example": "Vera Cruz"
+                                            },
+                                            "uf": {
+                                                "type": "string",
+                                                "example": "SP"
+                                            },
+                                            "ibge": {
+                                                "type": "string",
+                                                "example": "3556602"
+                                            },
+                                            "gia": {
+                                                "type": "string",
+                                                "example": "7134"
+                                            },
+                                            "ddd": {
+                                                "type": "string",
+                                                "example": "14"
+                                            },
+                                            "siafi": {
+                                                "type": "string",
+                                                "example": "7235"
+                                            }
+                                        }
+                                    },
+                                    "example": [
+                                        {
+                                            "cep": "17560246",
+                                            "label": "Avenida Paulista, Vera Cruz",
+                                            "logradouro": "Avenida Paulista",
+                                            "complemento": "de 1600/1601 a 1698/1699",
+                                            "bairro": "CECAP",
+                                            "localidade": "Vera Cruz",
+                                            "uf": "SP",
+                                            "ibge": "3556602",
+                                            "gia": "7134",
+                                            "ddd": "14",
+                                            "siafi": "7235"
+                                        },
+                                        {
+                                            "cep": "01001000",
+                                            "label": "Praça da Sé, São Paulo",
+                                            "logradouro": "Praça da Sé",
+                                            "complemento": "lado ímpar",
+                                            "bairro": "Sé",
+                                            "localidade": "São Paulo",
+                                            "uf": "SP",
+                                            "ibge": "3550308",
+                                            "gia": "1004",
+                                            "ddd": "11",
+                                            "siafi": "7107"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad params request"
+                    }
+                }
+            }
+        }
+    }
+}
